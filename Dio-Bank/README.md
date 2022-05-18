@@ -1,18 +1,17 @@
-## Getting Started
+## Dio-Bank
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+bem vindo ao projeto do banco Dio
 
-## Folder Structure
+## estrutura  do banco
 
-The workspace contains two folders by default, where:
+`banco` instituiçao
+`cliente` potenciais clientes que irão usar os servicos
+`conta corrente` tipo de conta especial com direito a cheque especial e cartao de credito
+`conta poupanca` conta simples ,com foco em poucar uma certa quantidade de dinheiro
+`Iconta` trata-se do contrato da aplicação
+`Main`  todo o projeto é iniciado apartir daqui
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+os arquivos de saida estão sendo jerados na pasta padrão `bin`
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+> se quiser personalizar a estrutura de pasta abra `.vscode/settings.json` e atualize as configuracoes relacionadas 

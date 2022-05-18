@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 
 public abstract class Conta implements IConta {
 
@@ -11,6 +12,7 @@ public abstract class Conta implements IConta {
 	protected double saldoESpecial;
 	protected double saldo;
 	protected Cliente cliente;
+	private double cartaoCredito;
 
 	public Conta(Cliente cliente, boolean conta) {
 		this.agencia = Conta.AGENCIA_PADRAO;
@@ -22,7 +24,7 @@ public abstract class Conta implements IConta {
 	private double valorEspecial(boolean tipoConta) {
 
 		if (tipoConta) {
-
+			this.cartaoCredito = 1542;
 			this.saldo = this.saldoESpecial += 500;
 
 			return saldo;
@@ -79,11 +81,13 @@ public abstract class Conta implements IConta {
 			System.out.println(String.format("cheque especial : %.2f", this.saldoESpecial));
 			System.out.println(String.format("Saldo total : %.2f", this.saldo));
 
+			System.out.println(String.format("limite do cartao :%.2f ", cartaoCredito));
+
 		} else {
 			System.out.println(String.format("Titular: %s", this.cliente.getNome()));
 			System.out.println(String.format("Agencia: %d", this.agencia));
 			System.out.println(String.format("Numero: %.1f", this.numero));
-			System.out.println(String.format("Saldo : %.2f", this.saldo));
+			System.out.println(String.format("Saldo : %.3f", this.saldo));
 
 		}
 
